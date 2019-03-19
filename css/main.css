@@ -1,0 +1,361 @@
+
+img, embed, object, video {
+  max-width: 100%;
+  max-height: 100%;
+ }
+
+html {
+  box-sizing: border-box; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+img {
+  -ms-interpolation-mode: bicubic; }
+
+
+.hidden {
+  display: none; }
+
+  body {
+    font-family: 'Maven Pro', sans-serif;
+    background-color: #CDE2EB;
+  }
+  .header {
+    display: none;
+  }
+.main_nav {
+  display: grid;
+  grid-template-columns:  repeat(4, 1fr);
+  grid-gap: 5px;
+  align-items: center;
+  padding: 20px;
+}
+.nav {
+  grid-column: 1/ 3;
+  grid-row: 1;
+  font-size: 20px;
+  font-weight: bold;
+  color: #2B80A5;
+}
+.edit{
+  grid-column: 3/ 4;
+  grid-row: 1;
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  padding-top: 7px;
+  padding-bottom: 2px;
+  font-size: 14px;
+  margin-left: auto;
+  width: 60px;
+  height: 30px;
+}
+.plus_button{
+  background-color: #ffff;
+  color: #000000;
+  text-align: center;
+  align-self: center;
+  text-decoration: none;
+  display: inline-block;
+  grid-column: 4/ 5;
+  grid-row: 1;
+  border-radius:50%;
+  cursor: pointer;
+  font-size: 25px;
+  width:30px;
+  height: 30px;
+  margin-left: auto;
+
+}
+
+.fav{
+  margin-bottom: 20px;
+  color: #104B81;
+}
+.imagcon img{
+  padding: 20px;
+  border-radius: 40px;
+}
+
+.wrapper {
+padding: 20px;
+}
+
+  /* column styles */
+
+  .column__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(12, 1fr));
+    grid-gap: 10px;
+
+  }
+
+  /* card styles */
+
+  .card__list {
+    /* display: grid;
+    grid-template-rows: auto; */
+    margin: 5px 0;
+
+  }
+
+  .card__item {
+    background-color: #ffffff; /* colour when the sensor is on */
+
+    /* background-color:#BBCBD2; for the colour when the sensor is close */
+    border-radius: 15px;
+    box-shadow: 0 1px 0 rgba(9,45,66,.25);
+    padding: 10px;
+    display: grid;
+    /* grid-template-columns:  repeat(4, 1fr); */
+    align-items: center;
+  }
+
+
+  .card__item img {
+    width:20%;
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .temp{
+   width:25% !important;
+  }
+  .door{
+    width:20% !important;
+  }
+  .door_close{
+    width:25% !important;
+  }
+
+  .card__title{
+    grid-column: 1/ 3;
+    grid-row: 1;
+    padding-right: 30px;
+    /* padding-top: 3px; */
+    text-align: right;
+  }
+
+  .card__tag {
+    font-size: .75rem;
+    padding: .1rem .5rem;
+    border-radius: .25rem;
+    font-weight: 700;
+    color: #000000;
+    display: inline-block;
+    grid-column: 3/ 4;
+    grid-row: 1;
+    padding-top: 5px;
+  }
+
+  /* Footer Style */
+
+.footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color:#3FA8D6;
+  display: grid;
+  grid-template-columns:  repeat(4, 1fr);
+  align-items: center;
+  grid-gap: 20px;
+}
+
+.home {
+  /* display: contents; */
+  /* width: 10%; */
+  grid-column: 1/ 2;
+  grid-row: 1;
+  text-align: center;
+  padding-bottom: 10px;
+  padding-top: 10px;
+
+}
+a{
+  display: contents;
+  text-decoration: none;
+}
+.home-icon{
+  padding: 5px;
+}
+.home h6{
+  color: #FBCA33;
+}
+.rooms{
+  /* display: contents; */
+  grid-column: 2/ 4;
+  grid-row: 1;
+  text-align: center;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+.rooms-icon{
+  padding: 5px;
+}
+.rooms h6{
+  color:#ffffff;
+}
+.routine{
+  /* display: contents; */
+  grid-column: 4/ 5;
+  grid-row: 1;
+  text-align: center;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-right: auto;
+}
+.routine-icon{
+  padding: 5px;
+}
+.routine h6{
+  color:#ffffff;
+}
+
+@media screen and (min-width: 500px){
+  .card__item img{
+    width:10%;
+  }
+   .temp{
+   width:10% !important;
+  }
+
+  .door{
+    width:10% !important;
+  }
+  .door_close{
+    width:10% !important;
+  }
+
+  .card__title{
+    text-align: center;
+  }
+
+}
+
+@media screen and (min-width: 1000px){
+
+  .footer{
+      display: none;
+  }
+  .header{
+    background-color:#3FA8D6;
+    display: grid;
+    grid-template-columns:  repeat(6, 1fr);
+    align-items: center;
+    padding-left: 20px;
+  }
+  .home__header {
+    width: 30%;
+    grid-column: 1/ 2;
+    grid-row: 1;
+    text-align: center;
+  }
+
+  .rooms__header{
+    width: 30%;
+    grid-column: 2/ 3;
+    grid-row: 1;
+    text-align: center;
+
+  }
+  .routine__header{
+    width: 30%;
+    grid-column: 3/ 4;
+    grid-row: 1;
+    text-align: center;
+
+  }
+
+  .logo{
+    width: 40%;
+    grid-column: 4/ 6;
+    grid-row: 1;
+    text-align: right;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+  .add{
+    grid-column: 6/ 7;
+    grid-row: 1;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+  .main_nav h2{
+    font-size: 30px;
+  }
+  .main_nav h4 {
+    display: none;
+  }
+  .main_nav p {
+    display: none;
+  }
+
+  .edit_add {
+    cursor: pointer;
+    background-color: #fff;
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding-top: 7px;
+    padding-bottom: 2px;
+    font-size: 14px;
+    margin-left: auto;
+    width: 60px;
+    height: 30px;
+  }
+  .plus_button__edit{
+    background-color: #ffff;
+    color: #000000;
+    text-align: center;
+    align-self: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius:50%;
+    cursor: pointer;
+    font-size: 25px;
+    width: 30px;
+    height: 30px;
+    margin-left: auto;
+  }
+
+  .img_two{
+    /* display: none; */
+    height: auto;
+  }
+  .card__title{
+    text-align: center;
+    /* padding-left: 20px; */
+  }
+  .card__item img{
+    /* width:10%; */
+
+  }
+  .card__tag {
+    text-align: center;
+  }
+   .temp{
+   width:10% !important;
+  }
+
+  .door{
+    width:5% !important;
+  }
+  .door_close{
+    width:5% !important;
+  }
+  .window_close{
+    width:5% !important;
+ }
+ .fav{
+   font-size: 18px;
+ }
+}
