@@ -19,7 +19,7 @@ var connection = mysql.createConnection({
   host: 'localhost',
   user: 'root',
   password: '',
-  database: 'hiddeneye',
+  database: 'DATABASE_NAME',
   timezone: 'EST'
 });
 
