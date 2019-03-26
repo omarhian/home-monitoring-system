@@ -164,6 +164,22 @@ p {
   font-size: 18px;
   font-family: "Nunito:300", sans-serif; }
 
+#burgBut {
+  border: solid 3px #ffffff;
+  border-radius: 4px;
+  margin-top: 5px;
+  margin-right: 5px;
+  cursor: pointer; }
+
+#burgBut .fas:hover {
+  color: #ffffff; }
+
+#mainNav button:hover {
+  background-color: #f9ca36;
+  border: solid 3px #f9ca36;
+  transition: 0.5s ease all;
+  cursor: pointer; }
+
 #mainNav ul li a {
   color: #38a0cf;
   text-decoration: none;

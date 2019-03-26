@@ -216,6 +216,25 @@ p {
   font-family: $p-tags;
 }
 
+#burgBut {
+	border: solid 3px $white;
+	border-radius: 4px;
+	margin-top: 5px;
+	margin-right: 5px;
+	cursor: pointer;
+}
+
+#burgBut .fas:hover {
+	color: $white;
+}
+
+#mainNav button:hover {
+	background-color: $domus-yellow;
+	border: solid 3px $domus-yellow;
+	transition: 0.5s ease all;
+	cursor: pointer;
+}
+
 #mainNav ul li a {
 	color: $domus-blue;
 	text-decoration: none;
