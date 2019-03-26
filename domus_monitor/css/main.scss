@@ -323,10 +323,16 @@ textarea {
     width: 160px; } }
 @media only screen and (min-width: 650px) {
   .col {
-    margin-left: 5%; } }
-@media only screen and (min-width: 703px) {
-  #button {
-    margin-top: 40px; } }
+    margin-left: 5%; }
+
+  #fname {
+    width: 90px;
+    display: inline-block;
+    float: left; }
+
+  #lname {
+    width: 90px;
+    float: right; } }
 @media only screen and (min-width: 870px) {
   #mainNav ul.slideToggle {
     display: none; }
@@ -352,75 +358,6 @@ textarea {
 
   #secondNav ul li a:hover {
     color: #f9ca36;
-    transition: all 0.6s ease; }
-
-  #about p {
-    margin-right: 10%;
-    margin-left: 10%; }
-
-  .short-txt, .long-txt, .desc {
-    margin-right: 10%; }
-
-  #body .desc {
-    margin-left: 10%;
-    margin-right: 10%;
-    width: 800px; }
-
-  #readerButtons button {
-    width: 30%; }
-
-  #tempInfo img {
-    width: 60%; }
-
-  .col {
-    width: 25%;
-    display: inline-block;
-    text-align: center;
-    vertical-align: top; }
-
-  .icon {
-    margin-left: 30%; }
-
-  .col h2, .col p {
-    text-align: center; }
-
-  form {
-    width: 70%;
-    margin-left: 15%; }
-
-  #contact {
-    text-align: center; } }
-@media only screen and (min-width: 1070px) {
-  #body .desc {
-    margin-left: 10%;
-    margin-right: 10%;
-    width: 810px; }
-
-  #tempInfo img {
-    width: 500px; } }
-@media only screen and (min-width: 1210px) {
-  #body .desc {
-    margin-left: 13%;
-    margin-right: 10%;
-    width: 810px; }
-
-  #about p {
-    margin-right: 10%;
-    margin-left: 13%; }
-
-  .short-txt, .long-txt, .desc {
-    margin-right: 13%; } }
-@media only screen and (min-width: 1300px) {
-  #body .desc {
-    margin-left: 15%;
-    margin-right: 10%;
-    width: 860px; }
-
-  #about p {
-    margin-right: 10%;
-    margin-left: 15%; }
-
-  .short-txt, .long-txt, .desc {
-    margin-right: 15%; } }
+    transition: all 0.6s ease; } }
 
 /*# sourceMappingURL=main.css.map */
