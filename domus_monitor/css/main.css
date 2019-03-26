@@ -239,19 +239,42 @@ p {
   text-align: center;
   cursor: pointer; }
 
-#tempInfo img {
-  width: 80%;
-  margin-top: 20px;
-  margin-bottom: -225px; }
-
-#tempInfo {
-  text-align: center; }
-
-#tempInfo p {
+#readerButtons p {
   margin-top: 24px; }
 
 #logInLink {
   color: #38a0cf; }
+
+#readerButtons {
+  text-align: center;
+  margin-left: -30px; }
+
+.readBut {
+  display: inline-block;
+  text-align: center;
+  width: 20%;
+  padding: 10px;
+  margin-left: 4px;
+  margin-right: 4px; }
+
+.readBut .fas, .readBut .far {
+  font-size: 30px;
+  padding-top: 2px;
+  color: #ffffff; }
+
+.readBut img {
+  opacity: 0;
+  margin-top: -110px; }
+
+.readBut button {
+  height: 50px;
+  width: 100%;
+  background-color: #afd9ec; }
+
+.readBut button:hover {
+  background-color: #38a0cf;
+  transition: ease 0.5s;
+  cursor: pointer; }
 
 /*********** FOOTER & FORM ***********/
 #footer {
@@ -262,7 +285,8 @@ p {
   background-repeat: no-repeat;
   background-position: center center;
   z-index: 0;
-  display: block; }
+  display: block;
+  margin-top: -200px; }
 
 #footer p, #bottomSocials, #copy {
   color: #ffffff;
@@ -325,6 +349,9 @@ textarea {
   transition: all 0.6s ease; }
 
 /*********** MEDIA QUERIES ***********/
+@media only screen and (min-width: 470px) {
+  #readerButtons {
+    margin-left: 0px; } }
 @media only screen and (min-width: 530px) {
   .long-txt {
     display: block; }
@@ -333,16 +360,16 @@ textarea {
     text-align: left;
     margin-left: auto;
     margin-right: auto;
-    width: 90%; }
-
-  #readerButtons button {
-    width: 160px; } }
+    width: 90%; } }
 @media only screen and (min-width: 650px) {
   .col {
     margin-left: 5%; } }
 @media only screen and (min-width: 703px) {
   #button {
-    margin-top: 40px; } }
+    margin-top: 40px; }
+
+  #readerButtons button {
+    width: 160px; } }
 @media only screen and (min-width: 870px) {
   #mainNav ul.slideToggle {
     display: none; }
@@ -370,24 +397,6 @@ textarea {
     color: #f9ca36;
     transition: all 0.6s ease; }
 
-  #about p {
-    margin-right: 10%;
-    margin-left: 10%; }
-
-  .short-txt, .long-txt, .desc {
-    margin-right: 10%; }
-
-  #body .desc {
-    margin-left: 10%;
-    margin-right: 10%;
-    width: 800px; }
-
-  #readerButtons button {
-    width: 30%; }
-
-  #tempInfo img {
-    width: 60%; }
-
   .col {
     width: 25%;
     display: inline-block;
@@ -405,38 +414,9 @@ textarea {
     margin-left: 15%; }
 
   #contact {
-    text-align: center; } }
-@media only screen and (min-width: 1070px) {
-  #body .desc {
-    margin-left: 10%;
-    margin-right: 10%;
-    width: 810px; }
+    text-align: center; }
 
-  #tempInfo img {
-    width: 500px; } }
-@media only screen and (min-width: 1210px) {
-  #body .desc {
-    margin-left: 13%;
-    margin-right: 10%;
-    width: 810px; }
-
-  #about p {
-    margin-right: 10%;
-    margin-left: 13%; }
-
-  .short-txt, .long-txt, .desc {
-    margin-right: 13%; } }
-@media only screen and (min-width: 1300px) {
-  #body .desc {
-    margin-left: 15%;
-    margin-right: 10%;
-    width: 860px; }
-
-  #about p {
-    margin-right: 10%;
-    margin-left: 15%; }
-
-  .short-txt, .long-txt, .desc {
-    margin-right: 15%; } }
+  #footer {
+    margin-top: 20px; } }
 
 /*# sourceMappingURL=main.css.map */

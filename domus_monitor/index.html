@@ -92,20 +92,53 @@
 			<h1>Product Reader</h1>
 			<p class="desc">If you already have a home monitoring system and are looking to view your home readings, please <span id="logInLink"><a href="">log into your account here.</a></span></p>
 
-			<div id="readerButtons">
-				<button id="active"><i class="fas fa-thermometer-three-quarters" id="temp"></i></button>
-				<button><i class="far fa-lightbulb" id="bulb"></i></button>
-				<button><i class="fas fa-unlock-alt" id="lock"></i></button>
-			</div>
-			<section id="readerInfo">
-				<aside id="tempInfo">
-					<p>March 30 2019</p>
-					<img src="images/placeholder.jpg" alt="placeholder for now, circle graph and toggle buttons">
-				</aside>
-				
-			</section>
+
+<section id="readerButtons">
+	<p>March 30 2019</p>
+	  <div class="readBut">
+	  <button class="button"><h1 class="hidden">Temp</h1><i class="fas fa-thermometer-three-quarters" id="temp"></i>
+	    <img src="images/placeholder.jpg" style="width:100%" onclick="reader(this);"></button>
+	  </div>
+  
+	  <div class="readBut">
+	  <button class="button"><h1 class="hidden">Light</h1><i class="far fa-lightbulb" id="bulb"></i>
+	    <img src="images/lightplaceholder.jpg" style="width:100%" onclick="reader(this);"></button>
+	  </div>
+  
+	  <div class="readBut">
+	  <button class="button"><h1 class="hidden">Lock</h1><i class="fas fa-unlock-alt" id="lock"></i>
+	    <img src="images/lockplaceholder.jpg" style="width:100%" onclick="reader(this);"></button>
+	  </div>
+
+</section>
+
+<div class="container">
+  
+  <img id="expanded" style="width:60%;margin-left: 15%;margin-top: 5%;">
+  
+</div>
 		</section>
 	</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	<footer id="footer">
 		<h1 class="hidden">Footer Section</h1>
 			<section id="contact">

@@ -3,6 +3,7 @@ $domus-yellow: #f9ca36;
 $domus-green: #3fa646;
 $domus-readerbutton: #afd9ec;
 $bodyCopyGrey: #6c6c6c;
+$domus-lightblue: #afd9ec;
 $white: #ffffff;
 $main-heading: 'Nunito:800', sans-serif;
 $secondary-heading: 'Nunito:400', sans-serif;
@@ -311,22 +312,50 @@ p {
 	cursor: pointer;
 }
 
-#tempInfo img {
-	width: 80%;
-	margin-top: 20px;
-	margin-bottom: -225px;
-}
-
-#tempInfo {
-	text-align: center;
-}
-
-#tempInfo p {
+#readerButtons p {
 	margin-top: 24px;
 }
 
 #logInLink {
 	color: $domus-blue;
+
+}
+
+#readerButtons {
+	text-align: center;
+	margin-left: -30px;
+}
+
+.readBut {
+  display: inline-block;
+  text-align: center;
+  width: 20%;
+  padding: 10px;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+.readBut .fas, .readBut .far {
+	font-size: 30px;
+	padding-top: 2px;
+	color: $white;
+}
+
+.readBut img{
+	opacity: 0;
+	margin-top: -110px;
+}
+
+.readBut button {
+	height: 50px;
+	width: 100%;
+	background-color: $domus-lightblue;
+}
+
+.readBut button:hover {
+	background-color: $domus-blue;
+	transition: ease 0.5s;
+	cursor: pointer;
 }
 
 /*********** FOOTER & FORM ***********/
@@ -340,6 +369,7 @@ p {
 	background-position: center center;
 	z-index: 0;
 	display: block;
+	margin-top: -200px;
 }
 
 #footer p, #bottomSocials, #copy {
@@ -415,6 +445,13 @@ textarea {
 
 /*********** MEDIA QUERIES ***********/
 
+
+@media only screen and (min-width: 470px) {
+	#readerButtons {
+	margin-left: 0px;
+	}
+}
+
 @media only screen and (min-width: 530px) { 
 	.long-txt {
 		display: block;
@@ -427,15 +464,14 @@ textarea {
 		width: 90%;
 	}
 
-	#readerButtons button {
-		width: 160px;
-	}
+	
 }
 
 @media only screen and (min-width: 650px) {
 	.col {
 		margin-left: 5%;
 	}
+
 }
 
 
@@ -443,11 +479,11 @@ textarea {
 	#button {
 		margin-top: 40px;
 	}
+	#readerButtons button {
+		width: 160px;
+	}
 
 }
-
-
-
 
 @media only screen and (min-width: 870px) {
 #mainNav ul.slideToggle {
@@ -482,29 +518,6 @@ textarea {
 		transition: all 0.6s ease;
 	}
 
-	#about p{
-		margin-right: 10%;
-		margin-left: 10%;
-	}
-
-	.short-txt, .long-txt, .desc {
-		margin-right: 10%;
-	}
-
-	#body .desc {
-		margin-left: 10%;
-		margin-right: 10%;
-		width: 800px;
-	}
-
-	#readerButtons button {
-		width: 30%;
-	}
-
-	#tempInfo img {
-		width: 60%;
-	}
-
 	.col {
 		width: 25%;
 		display: inline-block;
@@ -529,55 +542,8 @@ textarea {
 		text-align: center;
 	}
 
-
-}
-
-
-@media only screen and (min-width: 1070px) {
-
-#body .desc {
-		margin-left: 10%;
-		margin-right: 10%;
-		width: 810px;
-	}
-#tempInfo img {
-	width: 500px;
-}
-
-}
-
-@media only screen and (min-width: 1210px) {
-
-#body .desc {
-		margin-left: 13%;
-		margin-right: 10%;
-		width: 810px;
-	}
-
-#about p{
-		margin-right: 10%;
-		margin-left: 13%;
-	}
-
-	.short-txt, .long-txt, .desc {
-		margin-right: 13%;
+	#footer {
+		margin-top: 20px;
 	}
 }
 
-@media only screen and (min-width: 1300px) { 
-#body .desc {
-		margin-left: 15%;
-		margin-right: 10%;
-		width: 860px;
-	}
-
-#about p{
-		margin-right: 10%;
-		margin-left: 15%;
-	}
-
-	.short-txt, .long-txt, .desc {
-		margin-right: 15%;
-	}
-
-}

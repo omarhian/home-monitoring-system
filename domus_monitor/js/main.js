@@ -7,6 +7,13 @@ function burgbut() {
 		burgMenu.classList.toggle("slideToggle");
 		console.log('clicked');
 }
+
+
+function reader(buttons) {
+  var expandBut = document.getElementById("expanded");
+  expandBut.src = buttons.src;
+  expandBut.parentElement.style.display = "block";
+}
 	
 	//listeners
 
