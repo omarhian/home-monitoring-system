@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="44.687" height="28.027" viewBox="0 0 44.687 28.027">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #eaeaea;
+      }
+    </style>
+  </defs>
+  <g id="Group_51" data-name="Group 51" transform="translate(-53.688 -56.802)">
+    <g id="Group_14" data-name="Group 14" transform="translate(59.498 65.649)">
+      <path id="Path_33" data-name="Path 33" class="cls-1" d="M60.78,75.12a.652.652,0,0,1-.311-.078l-1.089-.592a.65.65,0,0,1-.259-.887c2.891-5.232,9.365-8.612,16.494-8.612s13.6,3.38,16.5,8.612a.652.652,0,0,1-.261.887l-1.089.592a.652.652,0,0,1-.882-.258c-2.449-4.433-8.048-7.3-14.264-7.3S63.8,70.35,61.35,74.783A.648.648,0,0,1,60.78,75.12Z" transform="translate(-59.04 -64.951)"/>
+    </g>
+    <g id="Group_15" data-name="Group 15" transform="translate(69.765 72.31)">
+      <path id="Path_34" data-name="Path 34" class="cls-1" d="M74.805,83.6a6.259,6.259,0,1,1,6.309-6.259A6.291,6.291,0,0,1,74.805,83.6Zm0-9.983a3.725,3.725,0,1,0,3.763,3.724A3.748,3.748,0,0,0,74.805,73.621Z" transform="translate(-68.496 -71.086)"/>
+    </g>
+    <g id="Group_16" data-name="Group 16" transform="translate(75.023 56.802)">
+      <rect id="Rectangle_20" data-name="Rectangle 20" class="cls-1" width="2.017" height="6.218"/>
+    </g>
+    <g id="Group_17" data-name="Group 17" transform="translate(84.028 58.864)">
+      <path id="Path_35" data-name="Path 35" class="cls-1" d="M83.369,65.07l-1.736-1.022,3.2-5.347,1.736,1.023Z" transform="translate(-81.633 -58.701)"/>
+    </g>
+    <g id="Group_18" data-name="Group 18" transform="translate(91.952 65.813)">
+      <path id="Path_36" data-name="Path 36" class="cls-1" d="M89.965,69.993l-1.034-1.724L94.32,65.1l1.034,1.725Z" transform="translate(-88.932 -65.102)"/>
+    </g>
+    <g id="Group_19" data-name="Group 19" transform="translate(63.103 58.865)">
+      <path id="Path_37" data-name="Path 37" class="cls-1" d="M65.554,65.07l-3.2-5.347L64.1,58.7l3.2,5.347Z" transform="translate(-62.359 -58.702)"/>
+    </g>
+    <g id="Group_20" data-name="Group 20" transform="translate(53.688 65.813)">
+      <path id="Path_38" data-name="Path 38" class="cls-1" d="M59.077,69.993l-5.389-3.166L54.722,65.1l5.388,3.167Z" transform="translate(-53.688 -65.102)"/>
+    </g>
+  </g>
+</svg>

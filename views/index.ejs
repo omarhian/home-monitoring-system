@@ -1,0 +1,156 @@
+
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>domus.</title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,800,800i,900i" rel="stylesheet">
+        <link href="css/main.css" rel="stylesheet" type="text/css">
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="/js/socket.js"></script>
+</head>
+
+<body>
+
+	<header id="masthead">
+		<h1 class="hidden">Masthead</h1>
+		<div id="topSocials">
+			<h1 class="hidden">Top Social Nav</h1>
+			<i class="fab fa-facebook"></i>
+			<i class="fab fa-instagram"></i>
+			<i class="fab fa-pinterest"></i>
+		</div>
+
+		<nav id="mainNav">
+			<h1 class="hidden">Main Nav</h1>
+			<button id="burgBut"><i class="fas fa-bars"></i></button>
+				<ul id="burgMenu" style="list-style: none;">
+					<li><a href="#product">product</a></li>
+					<li><a href="#about">about</a></li>
+					<li><a href="/dashboard">Dashboard</a></li>
+					<li><a href="#contact">contact</a></li>
+				</ul>
+		</nav>
+
+		<nav id="secondNav">
+			<h1 class="hidden">Second Nav</h1>
+				<ul style="list-style: none;">
+					<li><a href="#product">product</a></li>
+					<li><a href="#about">about</a></li>
+					<li><a href="/dashboard">Dashboard</a></li>
+					<li><a href="#contact">contact</a></li>
+				</ul>
+		</nav>
+
+
+		<div id="logo" class="center-div">
+			<h1 class="hidden">Main Logo</h1>
+			<img src="images/logo.png">
+		</div>
+		<aside id="tagline" class="center-div">
+			<h1 class="hidden">Tagline Area</h1>
+			<h3>The friendly monitoring system that helps you with your home.</h3>
+		</aside>
+		<div id="topNow"><button>Buy Now</button></div>
+		<div id="monitImg" class="center-div">
+			<img src="images/monitorhero.png" alt="Photo of domus product">
+		</div>
+		<div id="mainImg">
+			<h1 class="hidden">Masthead Img</h1>
+		</div>
+	</header>
+
+	<main id="body">
+		<h1 class="hidden">Main Body</h1>
+		<section id="product">
+			<h1 class="hidden">Product Area</h1>
+			<h1>Our Product</h1>
+				<p class="desc"><span class="short-txt">HiddenEye is a home monitoring system launched in 2019 by Domus &copy;. The company's debut product aims at helping homeowners keep an eye on their home at all times, giving them peace of mind.</span><br><br><span class="long-txt">The product features temperature controls, lighting controls, and ensuring the front doors to your home are locked. If you already have a Domus &copy; home monitoring system and would like to get readings for your system, please scroll to the Product Reader section to log in.</span></p>
+			<section class="col">
+				<div class="icon"><i class="fas fa-thermometer-three-quarters"></i></div>
+					<h2>Temperature Controls</h2>
+						<p>Change, check, or view history of the temperature settings within your home.</p>
+			</section>
+			<section class="col">
+				<div class="icon"><i class="far fa-lightbulb"></i></div>
+					<h2>Lighting Controls</h2>
+						<p>Turn the lights on or off through the app or check to see if you left a light on.</p>
+			</section>
+			<section class="col">
+			<div class="icon"><i class="fas fa-unlock-alt"></i></div>
+				<h2>Lock Doors Controls</h2>
+					<p>Give yourself peace of mind knowing your front door is locked or when it is opened.</p>
+			</section>
+			<div id="button"><button>Buy Now</button></div>
+		</section>
+		<section id="about">
+			<h1 class="hidden">About Area</h1>
+			<h1>About Domus</h1>
+			<p class="desc">Domus &copy; is a home comfort studio and company that was created by Blessy, Ritesh, Omar, and Brienne. Domus &copy; strives to be known within the industry as a brand that is family friendly, trustworthy, and reliable.<br><br>
+			The word Domus &copy; derives from the Latin word for “home”. For most people, their home is their tranquil place to feel safe, happy, and warm. It is one of the most basic human needs. The word home – or rather Domus &copy;– reflects and embodies the image and thoughts we’d like to be associated with the brand.</p>
+		</section>
+		<section id="reader">
+			<h1 class="hidden">Product Reader Area</h1>
+			<h1>Product Reader</h1>
+			<p class="desc">If you already have a home monitoring system and are looking to view your home readings, please <span id="logInLink"><a href="">log into your account here.</a></span></p>
+
+			<!-- <div id="readerButtons">
+                    light
+                    <div id="arduino_light"></div>
+                    <div id="arduino_temperature"></div>
+                    <div id="arduino_door"></div>
+			</div> -->
+			<section id="readerInfo">
+				<aside id="tempInfo">
+					<p>March 20 2019</p>
+					<img src="images/placeholder.jpg" alt="placeholder for now, circle graph and toggle buttons">
+				</aside>
+				
+			</section>
+		</section>
+	</main>
+	<footer id="footer">
+		<h1 class="hidden">Footer Section</h1>
+			<section id="contact">
+				<h1>Contact</h1>
+				<form>
+				  <label for="fname" class="hidden">Firstname</label>
+				  <input type="text" name="fname" id="fname" placeholder="Firstname" style="padding-left: 10px"><br>
+				  <label for="lname" class="hidden">Lastname</label>
+				  <input type="text" name="lname" id="lname" placeholder="Lastname"style="padding-left: 10px"><br>
+				  <label for="female" class="hidden">Email</label>
+				  <input type="text" name="email" id="email" placeholder="Your Email"style="padding-left: 10px"><br>
+				  <label for="msg" class="hidden">Message</label>
+				  <textarea placeholder="Your Message"style="padding-left: 10px" rows="10"></textarea><br><br>
+				  <div id="subBut"><button>Submit</button></div>
+				</form>
+			</section>
+			<aside id="bottomSocials">
+				<i class="fab fa-facebook"></i>
+				<i class="fab fa-instagram"></i>
+				<i class="fab fa-pinterest"></i>
+			</aside>
+			<section id="copy"><p>Copyright domus &copy; 2019</p></section>
+	</footer>
+
+
+
+
+<script src="js/main.js">
+
+var burgBut = document.querySelector("#burgBut");
+var burgMenu = document.querySelector("#burgMenu");
+
+burgBut.addEventListener("click", burgbut, false);
+
+function burgbut() {
+  burgMenu.classList.toggle("slideToggle");
+  console.log('clicked');
+}
+
+</script>
+</body>
+</html>
