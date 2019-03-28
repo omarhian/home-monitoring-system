@@ -18,8 +18,9 @@ var mysql = require('mysql')
 
 var connection = mysql.createConnection({
   host: 'localhost',
+  port: '8889',
   user: 'root',
-  password: '',
+  password: 'root',
   database: 'hiddeneye',
   timezone: 'EST'
 });
@@ -44,7 +45,10 @@ var io = require('socket.io')(server);
 // 
 var tempSensor, lightSensor, Doorsw;
 var five = require("johnny-five"); // Load the node library that lets us talk JS to the Arduino
-var board = new five.Board(); // Connect to the Arduino using that library
+// var board = new five.Board(); // Connect to the Arduino using that library
+var board = new five.Board({
+  port: "/dev/tty.HiddenEye-DevB"
+  });
 
 var indexRouter = require('./routes/index');
 
