@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/vue@2.3.4"></script>
+</head>
+<body>
+    master chart
+    
+
+    <div style="max-width: 800px;">
+    <canvas id="masterChart"></canvas>
+
+    
+    <div id="app" class="container">
+    	<div class="back_image">
+        
+        <!-- <news-list the-title="Headlines" v-bind:headlines="NewsHeadlines"></news-list> -->
+        <days-list the-title="Current Weather" v-bind:days="currentWeather"></days-list>
+        
+      </div>
+<!-- 
+      <div id="app1" class="container">
+    </div> -->
+      
+
+
+
+
+
+
+    <script>
+
+        window.historyLabels = [];
+        window.historyValues = [];
+fetch('/api/temperature/history')
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(response) {
+    var responseData = response;
+
+    for(let i = 0; i< responseData.length; i++) {
+        window.historyLabels[i] = responseData[i].date;
+        window.historyValues[i] = responseData[i].average;
+    }
+    window.historyLabels.unshift(32);
+    window.historyValues.unshift(32);
+
+
+    // console.log(window.historyValues);
+    var masterChart = new Chart(document.getElementById("masterChart"), {
+    type: 'bar',
+    data: {
+      labels: window.historyLabels,
+      datasets: [
+        {
+          label: "Temperature",
+          backgroundColor: "#ce7322",
+          data: window.historyValues
+        }      
+    ]
+    },
+    options: {
+      title: {
+        display: true,
+        text: 'Recent Temperature, Light values'
+      }
+    }
+});
+
+  });
+
+// console.log(window.historyLabels);
+// console.log(window.historyValues);
+
+
+
+
+    </script>
+    <!-- <script src="/js/News_api.js"></script> -->
+    <script src="/js/current_weather.js"></script>
+</body>
+</html>

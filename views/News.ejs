@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/vue@2.3.4"></script>
+</head>
+<body>
+    
+    <div id="app" class="container">
+    	<div class="back_image">
+    
+        <news-list the-title="Headlines" v-bind:headlines="NewsHeadlines"></news-list>
+        
+      </div>
+
+
+     </script>
+    <script src="/js/News_api.js"></script>
+</body>
+</html>
